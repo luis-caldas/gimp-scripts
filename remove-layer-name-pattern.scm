@@ -1,5 +1,5 @@
 (
-	define (remove_layer_name_pattern pattern regex_delete_pattern) (
+	define (remove-layer-name-pattern pattern regex-delete-pattern) (
 
 		let* ((filelist (cadr (file-glob pattern 1)))) (
 
@@ -26,7 +26,7 @@
 
 							(print layer-now-name)
 
-							(if (re-match regex_delete_pattern (car layer-now-name))
+							(if (re-match regex-delete-pattern (car layer-now-name))
 
 					        	(gimp-image-remove-layer image index-layer-id)
 
